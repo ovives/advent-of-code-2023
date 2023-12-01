@@ -1,4 +1,6 @@
-**--- Day 1: Trebuchet?! ---**
+# Day 1: Trebuchet?!
+### --- Part 1 ---
+
 Something is wrong with global snow production, and you've been selected to take a look. The Elves have even given you a map; on it, they've used stars to mark the top fifty locations that are likely to be having problems.
 
 You try to ask why they can't just use a weather machine ("not powerful enough") and where they're even sending you ("the sky") and why your map looks mostly blank ("you sure ask a lot of questions") and hang on did you just say the sky ("of course, where do you think snow comes from") when you realize that the Elves are already loading you into a trebuchet ("please hold still, we need to strap you in").
@@ -14,7 +16,7 @@ pqr3stu8vwx
 a1b2c3d4e5f
 treb7uchet
 ``````
-In this example, the calibration values of these four lines are 12, 38, 15, and 77. Adding these together produces 142.
+In this example, the calibration values of these four lines are `12`, `38`, `15`, and `77`. Adding these together produces `142`.
 
 Consider your entire calibration document. What is the sum of all of the calibration values?
 
