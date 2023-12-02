@@ -15,15 +15,15 @@ def get_color(str):
 def get_valid_id(game):
   [game_id, sets] = game.split(':')
   id = get_number(game_id)
-  a = sets.split(';')
-  for i in a:
-    b = i.split(',')
-    for x in b:
-      if BAG[get_color(x)] < get_number(x):
+  splitted_sets = sets.split(';')
+  for set in splitted_sets:
+    cubes = set.split(',')
+    for cube in cubes:
+      if BAG[get_color(cube)] < get_number(cube):
         return 0
   return id
 
-def parse_games(data):
+def get_valid_ids(data):
   return [get_valid_id(x) for x in data]
 
 try:
@@ -32,7 +32,7 @@ try:
 except:
   print('Input data not loaded')
 
-valid_ids = parse_games(data)
+valid_ids = get_valid_ids(data)
 result = 0
 for id in valid_ids:
   result += id
